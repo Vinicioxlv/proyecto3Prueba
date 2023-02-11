@@ -5,7 +5,7 @@ const apiKey = '353bd1fc1cfc4d66b96e320dae71fac9';
 //163de2169e8044f4ab9ceb0b3a734024
 
 // Bitcoin news
-const dataBitcoin = async() => {
+        export const dataBitcoin = async() => {
         const bitcoinName = 'bitcoin';
         // let url = `https://newsapi.org/v2/everything?q=${bitcoinName}&from=${octoberDate}&to=${novemberDate}&sortBy=popularity&apiKey=${apiKey}`;
         // let url = `https://newsapi.org/v2/top-headlines?country=${argentinaCountry}&category=${bitcoinName}&apiKey=${apiKey}`;
@@ -15,40 +15,16 @@ const dataBitcoin = async() => {
         
         const response = await fetch(url);
         const main = await response.json();
-        console.log(main)  
-        const { totalResults } = main; 
-        const bitcoinResults = totalResults;
+        //console.log(main)  
+        // const { totalResults } = main; 
+        // const bitcoinResults = totalResults;
 
         //Imprimir en html 
-        const printBitcoinHtml = document.querySelector('.info-bitcoin');
-        printBitcoinHtml.innerHTML = bitcoinResults;
-        console.log( 'Resultados Totales Bitcoin: ' + bitcoinResults );
+        // const printBitcoinHtml = document.querySelector('.info-bitcoin');
+        // printBitcoinHtml.innerHTML = bitcoinResults;
+        // //console.log( 'Resultados Totales Bitcoin: ' + bitcoinResults );
 
-
-        // Grafico 
-    //     var options = {
-    //         chart: {
-    //           height: 200,
-    //           width: 220,
-    //           type: "donut",
-    //         },
-    //         series: [bitcoinResults],
-    //         plotOptions: {
-    //           radialBar: {
-    //             dataLabels: {
-    //               total: {
-    //                 show: true,
-    //                 label: 'Resultados Totales',
-    //                 series: bitcoinResults
-    //               }
-    //             }
-    //           }
-    //         },
-    //         labels: ['Bitcoin']
-    //       };
-          
-    //     new ApexCharts(document.querySelector("#bitcoinResult"), options).render();
-
+          return main
     }
     
 

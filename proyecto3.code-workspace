@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../Desktop/ejerciciosucamp/proyecto3"
+		},
+		{
+			"path": "../Proyecto3team1"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Desktop/import"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Proyecto3team1",
+		"liveServer.settings.port": 5501
+	}
+}

@@ -1,3 +1,7 @@
+import {dataBitcoin} from "./data.js"
+
+console.log(dataBitcoin)
+  
 // const results = require('./data');
 
 /** Este es el grafico de lineas... no rifa tanto como el de pastel/donut */
